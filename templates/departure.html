@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ title }}</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+  <header class="container mt-3">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="/">Stepik Travel</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="/departures/msk">{{ departures.msk }}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/departures/spb">{{ departures.spb }}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/departures/nsk">{{ departures.nsk }}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/departures/ekb">{{ departures.ekb }}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/departures/kazan">{{ departures.kazan }}</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="container mt-3">
+    <h1 class="display-5 mt-4">Летим из Новосибирска</h1>
+    <p class="mb-4">Найдено ? туров, от ??? до ??? и от ? ночей до ?? ночей</p>
+    <!-- CARDS -->
+    <div class="row mt-5">
+      <div class="col-4">
+        <div class="card mb-4">
+          <div class="embed-responsive embed-responsive-16by9">
+             <img class="card-img-top embed-responsive-item" src={{ tours.1.picture }} alt="" />
+          </div>
+          <div class="card-body">
+            <h2 class="h5 card-title">{{ tours.1.title }}</h2>
+            <p class="card-text">{{ tours.1.description }}</p>
+            <a href="/tours/1" class="btn btn-sm btn-primary">Подробнее</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card mb-4">
+          <div class="embed-responsive embed-responsive-16by9">
+             <img class="card-img-top embed-responsive-item" src={{ tours.2.picture }} alt="" />
+          </div>
+          <div class="card-body">
+            <h2 class="h5 card-title">{{ tours.2.title }}</h2>
+            <p class="card-text">{{ tours.2.description }}</p>
+            <a href="/tours/2" class="btn btn-sm btn-primary">Подробнее</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card mb-4">
+          <div class="embed-responsive embed-responsive-16by9">
+             <img class="card-img-top embed-responsive-item" src={{ tours.3.picture }} alt="" />
+          </div>
+          <div class="card-body">
+            <h2 class="h5 card-title">{{ tours.3.title }}</h2>
+            <p class="card-text">{{ tours.3.description }}</p>
+            <a href="/tours/3" class="btn btn-sm btn-primary">Подробнее</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card mb-4">
+          <div class="embed-responsive embed-responsive-16by9">
+             <img class="card-img-top embed-responsive-item" src={{ tours.4.picture }} alt="" />
+          </div>
+          <div class="card-body">
+            <h2 class="h5 card-title">{{ tours.4.title }}</h2>
+            <p class="card-text">{{ tours.4.description }}</p>
+            <a href="/tours/4" class="btn btn-sm btn-primary">Подробнее</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card mb-4">
+          <div class="embed-responsive embed-responsive-16by9">
+             <img class="card-img-top embed-responsive-item" src={{ tours.5.picture }} alt="" />
+          </div>
+          <div class="card-body">
+            <h2 class="h5 card-title">{{ tours.5.title }}</h2>
+            <p class="card-text">{{ tours.5.description }}</p>
+            <a href="/tours/5" class="btn btn-sm btn-primary">Подробнее</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card mb-4">
+          <div class="embed-responsive embed-responsive-16by9">
+             <img class="card-img-top embed-responsive-item" src={{ tours.6.picture }} alt="" />
+          </div>
+          <div class="card-body">
+            <h2 class="h5 card-title">{{ tours.6.title }}</h2>
+            <p class="card-text">{{ tours.6.description }}</p>
+            <a href="/tours/6" class="btn btn-sm btn-primary">Подробнее</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
